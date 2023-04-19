@@ -1,0 +1,240 @@
+.container  
+    max-width: 250rem
+    margin: auto
+    padding: 0 3rem
+    position: relative
+    .hashtag
+        color: $color-white
+        font-family: 'OpenSans-Regular'
+        font-style: normal
+        font-weight: 400
+        font-size: 1.8rem
+        word-spacing: 4rem
+        writing-mode: vertical-rl
+        transform: rotate(180deg)
+
+.about
+    &__container
+        background: url("../img/backgrounds/wall.jpg") center / 100% 100% no-repeat scroll
+        padding: 12rem 0
+    &__content
+        display: flex
+        align-items: center
+        justify-content: center
+    &__text
+        width: 52.3rem
+        z-index: 2
+
+
+.reservation
+    padding: 15.1rem
+    margin: auto
+    &__container
+        background-color: $color-black-gray
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        padding: 4.8rem 3.2rem
+        box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7)
+        border: 1px solid rgba(220, 202, 135, 0.2)
+    &__data
+        width: 100%
+        display: flex
+        justify-content: space-between
+    &__data > input
+        border: 1px solid #F5EFDB
+        background: none
+        color: $color-white
+        width: 30%
+        height: 6rem
+        
+
+.menu
+    &__container
+        background: url("../img/backgrounds/beer.jpg") center / 100% 100% no-repeat scroll 
+        padding: 26.1rem 3.5rem
+    &__container > ul > li
+        margin-top: 6.4rem
+    &__container > ul > li > a > h3
+        color: $color-white
+        position: relative
+        display: inline-block
+    &__container > ul > li > a > h3:after
+        display: block
+        position: absolute
+        left: 0
+        width: 0
+        height: 2px 
+        background-color: $color-beige
+        content: ""
+        transition: width 0.3s ease-out 
+    &__container > ul > li > a > h3:hover:after,  &__container > ul > li > a > h3:focus
+        width: 100%
+   
+
+.pricelist
+    &__container
+        margin: auto
+        padding: 15.1rem
+    &__content
+        display: flex
+        justify-content: center
+    &__alhogol > h3, &__coctails > h3
+        color: $color-white
+    &__img
+        width: 420px
+
+    &__product-card
+        margin: 4rem
+        display: grid
+        grid-template-columns: 2fr 2fr 1fr
+        grid-template-rows: repeat(2, 2fr)
+        align-items: center
+        grid-gap: 1rem 
+        & h5:first-child
+            color: $color-beige
+            font-size: 2.3rem
+        .x-line
+            height: .1rem
+            border-bottom: 2px solid $color-white
+            align-self: center
+            justify-self: center
+            width: 11.9rem
+        p
+            grid-area: 2 / 1 / 2 / 4
+            text-align: left
+
+    
+.chef
+    &__container
+        background: url("../img/backgrounds/wall.jpg") center / 100% 100% no-repeat scroll
+        margin: auto
+        padding: 15.1rem
+    &__content
+        display: flex
+        justify-content: center
+    &__text
+        width: 57rem
+
+    .sign
+        font-family: "Bestermind-Regular"
+        font-size: 6.4rem
+        color: $color-white
+        letter-spacing: $ls4
+
+
+.testimony
+    &__container
+        margin: auto
+        padding: 15.1rem
+    &__customers
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-gap: 6.4rem 3.2rem
+        
+    .customer-card
+        text-align: left
+        display: grid
+        grid-template-columns: 22rem 1fr
+        grid-template-rows: 1.4fr .8fr 1fr
+        & img
+            grid-area: 1 / 1 / 4 / 1
+            width: 20.6rem
+         
+        
+.awards
+    &__container
+        background: url("../img/backgrounds/wall.jpg") center / 100% 100% no-repeat scroll
+        margin: auto
+        padding: 15.1rem
+    &__content
+        display: flex
+        justify-content: space-between
+    &__text
+        margin: auto 
+    &__laurels-list
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: .3fr .3fr
+        grid-gap: 5.4rem 3.2rem
+        
+    .laurel
+        text-align: left
+        display: grid
+        grid-template-columns: auto 1fr
+        grid-template-rows: .1fr .1fr
+        grid-gap: 1rem 3.2rem
+        & img
+            grid-area: 1 / 1 / 4 / 1
+            width: 7.9rem
+        & h5
+            color: $color-beige
+
+
+.blogs
+    &__container
+        margin: auto
+        padding: 15.1rem
+        & .wheel-container
+            top: 47rem
+    &__list
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 4rem
+    &-card
+        text-align: left
+        display: flex
+        flex-direction: column
+        & img
+            width: 100%
+        & a
+            color: $color-beige
+
+    &-data
+        color: $color-white
+        display: flex
+        justify-content: space-between
+
+
+        
+.instagram
+    &__container
+        background: url("../img/backgrounds/wall.jpg") center / 100% 100% no-repeat scroll
+        margin: auto
+        padding: 15.1rem 2rem
+    &__content
+        & .gallery
+            display: flex   
+            position: absolute
+            right: -21rem     
+            top: 7rem
+           
+    &__text
+        margin-rigth: auto 
+        width: 30%
+
+
+.newsletter
+    padding: 15.1rem
+    margin: auto
+    &__container
+        background-color: $color-black-gray
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        padding: 4.8rem 3.2rem
+        box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7)
+        border: 1px solid rgba(220, 202, 135, 0.2)
+    &__data .btn-text
+        padding: 2rem 
+        
+    &__data > input
+        border: 1px solid #F5EFDB
+        background: none
+        color: $color-white
+        width: 76rem
+        height: 6rem
+        margin-right: 2rem 

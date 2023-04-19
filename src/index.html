@@ -1,0 +1,352 @@
+---
+layout: Home
+title: Home
+header: header
+---
+
+<div class="margin-bottom-50px"></div>
+<main class="main">
+  <div class="container main__container">
+    {{>slider}}
+    <div class="scroll"></div>
+  </div>
+</main>
+<div class="margin-bottom-150px"></div>
+<section class="about">
+  <div class="container about__container text-center">
+    <div class="about__content">
+      <div class="about__text about__text-right text-right">
+        <h2>About Us</h2>
+        <div class="spoon-left block-left">
+          <img src="./assets/img/spoon.svg" alt="" />
+        </div>
+        <div class="margin-bottom-30px"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
+          adipiscing ultrices vulputate posuere tristique. In sed odio nec
+          aliquet eu proin mauris et.
+        </p>
+        <div class="margin-bottom-30px"></div>
+        <button class="btn-text">Know More</button>
+      </div>
+      <div class="about__image">
+        <img src="./assets/img/g-knife.png" alt="knife" />
+      </div>
+      <div class="about__text about__text-left text-left">
+        <h2>About Us</h2>
+        <div class="spoon"></div>
+        <div class="margin-bottom-30px"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
+          adipiscing ultrices vulputate posuere tristique. In sed odio nec
+          aliquet eu proin mauris et.
+        </p>
+        <div class="margin-bottom-30px"></div>
+        <button class="btn-text">Know More</button>
+      </div>
+    </div>
+    <div class="wheel-container absolute-right">{{>wheel}}</div>
+  </div>
+</section>
+<section class="reservation">
+  <div class="container reservation__container">
+    <h5>Reservation</h5>
+    <div class="spoon"></div>
+    <div class="margin-bottom-10px"></div>
+    <h2>Book A Table</h2>
+    <div class="margin-bottom-30px"></div>
+    <div class="margin-bottom-10px"></div>
+    <form class="reservation__data text-center">
+      <input list="persons" value="1 person" type="text" />
+      <datalist id="persons">
+        <option>1 person</option>
+        <option>2 person</option>
+        <option>3 person</option>
+        <option>4 person</option>
+      </datalist>
+
+      <input type="date" name="" id="reservation-data" />
+      <input type="time" name="" id="" />
+    </form>
+    <div class="margin-bottom-50px"></div>
+    <div class="margin-bottom-10px"></div>
+    <div class="btn-text">Book Now</div>
+  </div>
+</section>
+<section class="menu">
+  <div class="container menu__container">
+    <div class="wheel-container absolute-top">{{>wheel}}</div>
+    <ul>
+      <li>
+        <a href="#"><h3>Bar Menu</h3></a>
+      </li>
+      <li>
+        <a href="#"><h3>Food Menu</h3></a>
+      </li>
+      <li>
+        <a href="#"><h3>Desserts Menu</h3></a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="pricelist">
+  <div class="container pricelist__container text-center">
+    <h5>Menu that fits you palatte</h5>
+    <div class="margin-bottom-10px"></div>
+    <div class="spoon block-center"></div>
+    <div class="margin-bottom-10px"></div>
+    <h2>Today’s Special</h2>
+    <div class="margin-bottom-50px"></div>
+    <div class="margin-bottom-10px"></div>
+    <div class="pricelist__content">
+      <div class="pricelist__alhogol">
+        <h3>Wine & Beer</h3>
+        <div class="margin-bottom-50px"></div>
+        <div class="pricelist__product-card">
+          <h5>Chapel Hill Shiraz</h5>
+          <div class="x-line"></div>
+          <h5>$56</h5>
+          <p>AU | Bottle</p>
+        </div>
+        <div class="pricelist__product-card">
+          <h5>Catena Malbec</h5>
+          <div class="x-line"></div>
+          <h5>$59</h5>
+          <p>AR | Bottle</p>
+        </div>
+        <div class="pricelist__product-card">
+          <h5>La Vieille Rosé</h5>
+          <div class="x-line"></div>
+          <h5>$44</h5>
+          <p>FR | 750 ml</p>
+        </div>
+        <div class="pricelist__product-card">
+          <h5>Rhino Pale Ale</h5>
+          <div class="x-line"></div>
+          <h5>$31</h5>
+          <p>CA | 750 ml</p>
+        </div>
+        <div class="pricelist__product-card">
+          <h5>Irish Guinness</h5>
+          <div class="x-line"></div>
+          <h5>$26</h5>
+          <p>IE | 750 ml</p>
+        </div>
+      </div>
+      <img class="pricelist__img"src="./assets/img/pricelist.jpg" alt="coctails">
+      <div class="pricelist__coctails">
+        <h3>Cocktails</h3>
+        <div class="margin-bottom-50px"></div>
+        <div class="pricelist__product-card">
+          <h5>Aperol Spritz</h5>
+          <div class="x-line"></div>
+          <h5>$20</h5>
+          <p>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+        </div>
+        <div class="pricelist__product-card">
+          <h5>Dark 'N' Stormy</h5>
+          <div class="x-line"></div>
+          <h5>$16</h5>
+          <p>Dark rum | Ginger beer | Slice of lime. </p>
+        </div>
+        <div class="pricelist__product-card">
+          <h5>Daiquiri</h5>
+          <div class="x-line"></div>
+          <h5>$10</h5>
+          <p>Rum | Citrus juice | Sugar</p>
+        </div>
+        <div class="pricelist__product-card">
+          <h5>Old Fashioned</h5>
+          <div class="x-line"></div>
+          <h5>$31</h5>
+          <p>Bourbon | Brown sugar | Angostura Bitters</p>
+        </div>
+        <div class="pricelist__product-card">
+          <h5>Negroni</h5>
+          <div class="x-line"></div>
+          <h5>$26</h5>
+          <p>Gin | Sweet Vermouth | Campari | Orange garnish</p>
+        </div>
+      </div>
+    </div>
+    <div class="margin-bottom-50px"></div>
+    <div class="margin-bottom-10px"></div>
+    <div class="btn-text">View More</div>
+  </div>
+</section>
+<section class="chef">
+  <div class="container chef__container">
+    <div class="chef__content">
+      <div class="square__container">
+        {{>square-border}}
+      </div>   
+      <div class="x-indent-100"></div>
+      <div class="margin-bottom-20px"></div>
+      <div class="chef__text">
+        <div class="chef__suptitle"><h5>Chef’s Word</h5><div class="spoon"></div></div>
+        <div class="chef__title"><h2>What we believe in</h2></div>
+        <div class="margin-bottom-30px"></div>
+        <div class="chef__subtitle"><p>{{>quotes}} Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p></div>
+        <div class="margin-bottom-60px"></div>
+        <div class="chef__data"><h4>Kevin Luo</h4><div class="margin-bottom-10px"></div><p>Chef & Founder</p><div class="margin-bottom-20px"></div><span class="sign">Kevin Luo</span></div>
+        
+      </div>
+    </div>
+    <div class="wheel-container absolute-right">{{>wheel}}</div>
+  </div>
+</section>
+<section class="testimony">
+  <div class="container testimony__container text-center">
+    <h5>Testimony</h5>
+    <div class="margin-bottom-10px"></div>
+    <div class="spoon block-center"></div>
+    <div class="margin-bottom-10px"></div>
+    <h2>Happy customers</h2>
+    <div class="margin-bottom-60px"></div>
+    <div class="testimony__customers">
+      <div class="customer-card">
+        <img src="./assets/img/cus1.png" alt="happy customer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+        <h4>Wade Warren</h4>
+        <p>Sommelier</p> 
+      </div>
+      <div class="customer-card">
+        <img src="./assets/img/cus2.png" alt="happy customer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+        <h4>Jane Cooper</h4>
+        <p>Chef</p> 
+      </div>
+      <div class="customer-card">
+        <img src="./assets/img/cus3.png" alt="happy customer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+        <h4>Robert Fox</h4>
+        <p>Chef</p> 
+      </div>
+      <div class="customer-card">
+        <img src="./assets/img/cus4.png" alt="happy customer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+        <h4>Brooklyn Simmons</h4>
+        <p>Caterer</p> 
+      </div>
+    </div>
+</section>
+<section class="awards">
+  <div class="container awards__container">
+    <div class="awards__content">
+      <div class="awards__text">
+        <h5>Awards & recognition</h5>
+        <div class="spoon"></div>
+        <h2>Our Laurels</h2>
+        <div class="margin-bottom-60px"></div>
+        <div class="awards__laurels-list">
+          <div class="laurel">
+            <img src="./assets/img/award.png" alt="award">
+            <h5>Bib Gourmond</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <div class="laurel">
+            <img src="./assets/img/award.png" alt="award">
+            <h5>Rising Star</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <div class="laurel">
+            <img src="./assets/img/award.png" alt="award">
+            <h5>AA Hospitality </h5>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <div class="laurel">
+            <img src="./assets/img/award.png" alt="award">
+            <h5>Outstanding Chef</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <img class="awards__image" src="./assets/img/laurel.png"/>
+    </div>
+  </div>
+</section>
+<section class="blogs">
+  <div class="container blogs__container text-center">
+    <h5>Blogs</h5>
+    <div class="margin-bottom-10px"></div>
+    <div class="spoon block-center"></div>
+    <div class="margin-bottom-10px"></div>
+    <h2>Gerícht updates</h2>
+    <div class="margin-bottom-60px"></div>
+    <div class="blogs__list">
+      <div class="blogs-card">
+        <img src="./assets/img/blogs-1.png" alt="happy customer">
+        <div class="margin-bottom-20px"></div>
+        <div class="blogs-data"><data>16 Apr 2021</data><div class="blog-author">- Annalisa L</div></div>
+        <div class="margin-bottom-30px"></div>
+        <h4>tips for prepping and caring for your grill</h4>
+        <div class="margin-bottom-30px"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+        <div class="margin-bottom-30px"></div>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blogs-card">
+        <img src="./assets/img/blogs-2.png" alt="happy customer">
+        <div class="margin-bottom-20px"></div>
+        <div class="blogs-data"><data>23 May 2021</data><div class="blog-author">-John Micheal</div></div>
+        <div class="margin-bottom-30px"></div>
+        <h4>summer cocktails and mocktails</h4>
+        <div class="margin-bottom-30px"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+        <div class="margin-bottom-30px"></div>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blogs-card">
+        <img src="./assets/img/blogs-3.png" alt="happy customer">
+        <div class="margin-bottom-20px"></div>
+        <div class="blogs-data"><data>06 Aug 2021</data><div class="blog-author">-Fred W</div></div>
+        <div class="margin-bottom-30px"></div>
+        <h4>easy cooking for college students</h4>
+        <div class="margin-bottom-30px"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+        <div class="margin-bottom-30px"></div>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="margin-bottom-50px"></div>
+    <div class="btn-text block-center">View More</div>
+    <div class="wheel-container absolute-right">{{>wheel}}</div>
+  </div>
+</section>
+<section class="instagram">
+  <div class="container instagram__container">
+    <div class="instagram__content">
+      <div class="instagram__text">
+        <h5>Instagram</h5>
+        <div class="spoon"></div>
+        <h2>Photo Gallery</h2>
+        <div class="margin-bottom-60px"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+        <div class="margin-bottom-30px"></div>
+        <div class="btn-text">View More</div>
+      </div>
+      <div class="gallery">
+        <img src="./assets/img/carousel/1.png" alt=""><img src="./assets/img/carousel/2.png" alt=""><img src="./assets/img/carousel/3.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="newsletter">
+  <div class="container newsletter__container">
+    <h5>Newsletter</h5>
+    <div class="spoon"></div>
+    <div class="margin-bottom-10px"></div>
+    <h2>Subscribe to Our Newsletter</h2>
+    <div class="margin-bottom-30px"></div>
+    <div class="margin-bottom-10px"></div>
+    <p>And never miss latest Updates!</p>
+    <div class="margin-bottom-30px"></div>
+    <div class="margin-bottom-10px"></div>
+    <form class="newsletter__data text-center">
+      <input type="email" placeholder="email" name="email" id="email" />
+      <div class="btn-text">Subscribe</div>
+    </form>
+  </div>
+</section>
+{{>footer}}
